@@ -33,7 +33,7 @@ define(['services/routeResolver'],function(){
 
 			$rootScope.apptitle = config.get('apptitle');
 			$rootScope.user = { 
-				"logged": true,
+				"logged": false,
 				"favs": [],
 			 };
 		
