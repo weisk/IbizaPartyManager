@@ -5,18 +5,10 @@
 		require 'vendor/autoload.php';
 		require_once 'common.php';
 		
-		session_start();
-
 		$root = "/api";
 
 		$app = new \Slim\Slim();
 
-		/*
-		$get = $app->request->get();
-		$post = $app->request->post();
-		$delete = $app->request->delete();
-		$put = $app->request->put();
-		*/
 
 	//Public API
 
@@ -98,31 +90,7 @@
 			echo "Add attendant to party $id";
 		});
 
-	// Run API
+	// Run the application
 
 		$app->run();
-
-	/*	
-
-	if ($_SERVER["REQUEST_METHOD"] == "GET") {
-
-		$op = $_GET['action'];
-		switch ($op) {
-			case 'getlink':
-				if(isset($_SESSION['logged'])) {
-					$r = Array();
-					$ret = getlink($_SESSION['at'],$_SESSION['ut'],$_GET['link']);
-					if($ret["success"]) $r["url"] = $ret["data"];
-					echo json_encode($r);
-				} else {
-					$r = Array();
-					$r["error"] = "E5";
-					echo json_encode($r);
-				}
-			default: 
-				break;
-		}
-		return;
-
-	} */
 ?>
