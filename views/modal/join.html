@@ -1,0 +1,22 @@
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="close()">×</button>
+            <h4 class="modal-title">Join this party!</h4>
+          </div>
+          <div class="modal-body">
+            <form role="form" ng-submit="join()">
+		        <div class="form-group">
+		          <label for="exampleInputEmail1">Name</label>
+		          <input type="text" class="form-control" required ng-model="newatt.name">
+		        </div>
+		        <div class="form-group">
+		          <label for="exampleInputPassword1" >Email</label>
+		          <input type="email" class="form-control" required ng-model="newatt.email">
+		        </div>
+		        <button type="submit" class="btn btn-default">Join</button>
+		      </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal"  ng-click="close()">Close</button>
+          </div>
+        </div>

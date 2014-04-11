@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title ng-bind-template="{{apptitle}}&nbsp;&nbsp;|&nbsp;&nbsp;{{title}}"></title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Todas tus series y peliculas favoritas online, sin esperas ni publicidad">
+		<meta name="keywords" content="Series,Online,Peliculas,Documentales,Streaming,Download,Media,Movies,Shows">
+		<meta name="author" content="FML-weisK">
+
+		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"></link>
+
+		<link href="css/css.css" rel="stylesheet"></link>
+	</head>
+
+	<body>
+
+		<ng-include src="'views/Header.html'"></ng-include>
+
+		<ng-view></ng-view>
+
+		<ng-include src="'views/Footer.html'"></ng-include>
+
+		<script src="assets/jquery.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.js"></script>
+		<script src="assets/angular/angular.min.js"></script>
+		<script src="assets/angular/angular-route.min.js"></script>
+		<script src="assets/angular/angular-resource.min.js"></script>
+		<script src="assets/angular/angular-animate.min.js"></script>
+		<script src="assets/ui-bootstrap-custom-0.10.0.min.js"></script>
+		<script src="assets/require.min.js" data-main="app/main"></script>
+		
+	</body>
+</html>
